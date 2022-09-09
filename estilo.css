@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 20px;
+    padding: 50px;
+}
+
+form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 20px;
+
+    max-width: 400px;
+
+}
+
+#box_form,
+#box_dados {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+input {
+    padding-left: 5px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+
+}
+
+#box_bto_cadastro {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: start;
+}
+
+#bto_cadastro {
+    color: whitesmoke;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+
+    width: 40%;
+    min-width: 115px;
+
+}
+
+.dados_info {
+    background-color: #eeeded;
+    width: 100%;
+    max-width: 400px;
+    border-left: #007bff solid 2px;
+    border-radius: 3px;
+
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.deletar {
+    width: 30px;
+    font-weight: bold;
+    background-color: #dc3545;
+    border-radius: 3px;
+    text-align: center;
+
+    padding: 3px;
+    text-decoration: none;
+    color: black;
+
+    float: right;
+}
+
+
+.dados_info:hover {
+    background-color: #cecece;
+    transition: 0.3s;
+    transform: scale(1.02);
+}
+
+.deletar:hover {
+    border: 1px solid black;
+}
+
+#bto_cadastro:hover {
+    background-color: #2890ff;
+    cursor: pointer;
+
+}
+
+@media(max-width: 425px) {
+
+    body {
+        padding: 20px;
+        transition: .5s;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DOM</title>
+</head>
+
+<body>
+        
+    <div id="box_form">
+
+        <form action="">
+            <fieldset>
+                <legend>Cadastro da casa</legend>
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required>
+
+                <label for="numero">N°: </label>
+                <input type="number" id="numero" name="numero" min="1" step="1" required>
+
+                <label for="area">Área da casa: </label>
+                <input type="number" id="area" name="area" min="1" required>
+
+
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="box_bto_cadastro">
+        <button type="button" onclick="verificar_input()" value="cadastrar" id="bto_cadastro">Cadastrar</button>
+    </div>
+
+
+    <div id="box_dados"></div>
+</body>
+<script src="index.js"></script>
+
+</html>
